@@ -3,19 +3,19 @@
 Console Application that allows users to manage a to-do list. The program should allow the user to add, view and remove tasks from their to-do list.
 
 When the program starts, it should display a menu of options, such as:
-- Add a new task.
+- Add a new task:
 
 If the user chooses to add a task, they should be prompted to enter the task description and due date. The task should then be added to the to-do list.
 
-- View all tasks.
+- View all tasks:
 
 If the user selects to view all tasks, they should be shown a list of all the tasks currently in the to-do list, along with their due dates.
 
-- Remove a task.
+- Remove a task:
 
 If the user choose to remove a task, they should be prompted to select the task to remove from the to-do list. Once the taks is removed, the updated task list should be displayed.
 
-- Quit the program.
+- Quit the program:
 
 Ends the program.
 
