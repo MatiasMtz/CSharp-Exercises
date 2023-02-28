@@ -25,6 +25,7 @@ Ends the program.
 	- Allow the user to edit the description or due date of a task.
 
 Class hierarchy example:
+
 -- Task 
 
 -- RecurringTask (This class will represent a recurring task entity, with properties and methods to handle recurring tasks.) 
