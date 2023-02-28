@@ -1,0 +1,15 @@
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\bin\Debug\net7.0\toDoList.exe
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\bin\Debug\net7.0\toDoList.deps.json
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\bin\Debug\net7.0\toDoList.runtimeconfig.json
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\bin\Debug\net7.0\toDoList.dll
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\bin\Debug\net7.0\toDoList.pdb
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.csproj.AssemblyReference.cache
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.AssemblyInfoInputs.cache
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.AssemblyInfo.cs
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.csproj.CoreCompileInputs.cache
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.dll
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\refint\toDoList.dll
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.pdb
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\toDoList.genruntimeconfig.cache
+C:\Users\matim\OneDrive\Escritorio\ToDoListC#\toDoList\obj\Debug\net7.0\ref\toDoList.dll
