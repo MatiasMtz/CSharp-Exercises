@@ -40,7 +40,6 @@ class Program
                 Console.WriteLine("Input is not a valid option.");
 				continue;
             }			
-			Console.Clear();
 			Console.WriteLine($"{command}");
 		}
 	}
@@ -61,7 +60,22 @@ class Program
 
 	static void addTask()
     {
-		Console.WriteLine("AÑADIR TASK");
+		string taskName = "";
+		string taskDescription = "";
+		DateTime taskDueDate;
+
+		Console.WriteLine("Enter your task name: ");
+		taskName = Console.ReadLine();
+		Console.WriteLine("Enter your task description: ");
+		taskDescription = Console.ReadLine();
+		Console.WriteLine("Enter your task due date: ");
+		taskDueDate = DateTime.Parse(Console.ReadLine());
+
+		Task task = new Task(taskName, taskDescription, taskDueDate);
+		Console.WriteLine($"{task.taskName}, {task.taskDescription}, {task.taskDueDate}");
+	}
+
+	static void saveTasks(int taskId) {
 	}
 
 	static void viewAllTasks()

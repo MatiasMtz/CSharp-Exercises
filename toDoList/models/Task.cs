@@ -1,12 +1,15 @@
 using System;
 class Task
 {
-	public int taskId { get; }
-	public string taskName { get; set; } = string.Empty;
-	public string description { get; set; } = string.Empty;
-	public DateTime date { get; set; }
+	public int taskID;
+	public string taskName;
+	public string taskDescription; 
+	public DateTime taskDueDate;
 
 	// empty constructor
-	public Task() {
+	public Task(string name, string desc, DateTime date) {
+		taskName = name;
+		taskDescription = desc;
+		taskDueDate = date;
 	}
 }
