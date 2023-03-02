@@ -4,29 +4,27 @@ class Program
 	static void Main(string[] args)
 	{
 		bool program = true;
-		bool goBackMenu = false;
-		displayMenu();
+		Console.Clear();
 		while (program)
 		{
-			if (goBackMenu) 
-			{
-				displayMenu();
-				goBackMenu = false;
-			};
-		    
+			displayMenu();
+			Console.WriteLine();
 			int command = 0;
 			
 			try {
 				command = Convert.ToInt32(Console.ReadLine());
 				switch (command) {
 					case 1:
-					    addTask();
+						Console.Clear();
+						addTask();
 						break;
 					case 2:
+						Console.Clear();
 					    viewAllTasks();
 						break;
 					case 3:
-					    deleteTask();
+						Console.Clear();
+						deleteTask();
 						break;
 					case 4:
 						program = false;
@@ -37,63 +35,69 @@ class Program
 				}
 			}
 			catch (FormatException) {
-                Console.WriteLine("Input is not a valid option.");
+                Console.WriteLine("Your input is not a number between 1 and 4.");
 				continue;
             }			
-			Console.WriteLine($"{command}");
 		}
 	}
+
 	static void displayMenu()
 	{
 		char space = (char)32;
 		Console.WriteLine();
-		Console.WriteLine("TO-DO LIST MENU");
-		Console.WriteLine();
+		Console.WriteLine("TO-DO LIST MENU\n");
 		Console.WriteLine($"{space}{space}(1) Add task");
 		Console.WriteLine($"{space}{space}(2) View all tasks");
 		Console.WriteLine($"{space}{space}(3) Delete task");
-		Console.WriteLine($"{space}{space}(4) Quit program");
-		Console.WriteLine();
-		Console.WriteLine("Enter your choice: ");
-		Console.WriteLine();
+		Console.WriteLine($"{space}{space}(4) Quit program\n");
+		Console.Write("Enter your choice: ");
 	}
 
 	static void addTask()
     {
-		string taskName = "";
-		string taskDescription = "";
-		DateTime taskDueDate;
+		// Due date format depends on the current region.
+		Task task = new Task();
 
 		Console.WriteLine("Enter your task name: ");
-		taskName = Console.ReadLine();
+		task.taskName = Console.ReadLine();
+
 		Console.WriteLine("Enter your task description: ");
-		taskDescription = Console.ReadLine();
-		Console.WriteLine("Enter your task due date: ");
-		taskDueDate = DateTime.Parse(Console.ReadLine());
+		task.taskDescription = Console.ReadLine();
 
-		Task task = new Task(taskName, taskDescription, taskDueDate);
-		Console.WriteLine($"{task.taskName}, {task.taskDescription}, {task.taskDueDate}");
+		Console.WriteLine("Enter your task due date: (DD-MM-YYYY)");
+		task.taskDueDate = DateTime.Parse(Console.ReadLine());
+
+		GlobalStorage.taskList.Add(task);
+		Console.WriteLine();
+		Console.WriteLine("Task added successfully");
 	}
-
-	static void saveTasks(int taskId) {
-	}
-
 	static void viewAllTasks()
     {
-		Console.WriteLine("VER TASKS");
+		string column1 = "TASK NAME";
+		string column2 = "TASK DESCRIPTION";
+		string column3 = "TASK DUEDATE";
+		Console.WriteLine($"| {column1, -50} | {column2, -50} | {column3, -20} |");
+
+		foreach(Task task in GlobalStorage.taskList) {
+			Console.WriteLine($"| {task.taskName, -50} | {task.taskDescription, -50} | {task.taskDueDate.ToString("dd/MM/yyyy"), -20} |");
+		}
+		Console.WriteLine();
 	}
 
 	static void deleteTask()
     {
-        Console.WriteLine("Enter TaskID");
-		try
-		{
-			int taskID = Convert.ToInt32(Console.ReadLine());
-			// delete task or show error message (taskID not found)
+		viewAllTasks();
+		Console.WriteLine("Enter the TASK NAME to be deleted");
+		string taskName = Console.ReadLine();
+		foreach (Task task in GlobalStorage.taskList) {
+			if (task.taskName.Equals(taskName)) {
+				GlobalStorage.taskList.Remove(task); 
+                Console.WriteLine("Task deleted successfully");
+                break;
+            }
+			else {
+				Console.WriteLine("Task not found\n");
+			}
 		}
-		catch (FormatException)
-		{
-			Console.WriteLine("TaskID must be a number");
-	    }
 	}
 }

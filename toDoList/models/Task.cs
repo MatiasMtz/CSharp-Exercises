@@ -1,15 +1,11 @@
 using System;
-class Task
+public class Task
 {
-	public int taskID;
-	public string taskName;
-	public string taskDescription; 
-	public DateTime taskDueDate;
+	public string taskName { get; set; }
+	public string taskDescription { get; set; }
+	public DateTime taskDueDate { get; set; }
 
-	// empty constructor
-	public Task(string name, string desc, DateTime date) {
-		taskName = name;
-		taskDescription = desc;
-		taskDueDate = date;
+	public Task() {
 	}
+
 }
