@@ -5,6 +5,7 @@ class Program
 	{
 		bool program = true;
 		Console.Clear();
+		Task.deserializeList();
 		while (program)
 		{
 			displayMenu();
@@ -16,17 +17,18 @@ class Program
 				switch (command) {
 					case 1:
 						Console.Clear();
-						addTask();
+						Task.addTask();
 						break;
 					case 2:
 						Console.Clear();
-					    viewAllTasks();
+					    Task.viewAllTasks();
 						break;
 					case 3:
 						Console.Clear();
-						deleteTask();
+						Task.deleteTask();
 						break;
 					case 4:
+						Task.serializeList();
 						program = false;
 						break;
 					default: 
@@ -53,51 +55,7 @@ class Program
 		Console.Write("Enter your choice: ");
 	}
 
-	static void addTask()
-    {
-		// Due date format depends on the current region.
-		Task task = new Task();
+	
 
-		Console.WriteLine("Enter your task name: ");
-		task.taskName = Console.ReadLine();
-
-		Console.WriteLine("Enter your task description: ");
-		task.taskDescription = Console.ReadLine();
-
-		Console.WriteLine("Enter your task due date: (DD-MM-YYYY)");
-		task.taskDueDate = DateTime.Parse(Console.ReadLine());
-
-		GlobalStorage.taskList.Add(task);
-		Console.WriteLine();
-		Console.WriteLine("Task added successfully");
-	}
-	static void viewAllTasks()
-    {
-		string column1 = "TASK NAME";
-		string column2 = "TASK DESCRIPTION";
-		string column3 = "TASK DUEDATE";
-		Console.WriteLine($"| {column1, -50} | {column2, -50} | {column3, -20} |");
-
-		foreach(Task task in GlobalStorage.taskList) {
-			Console.WriteLine($"| {task.taskName, -50} | {task.taskDescription, -50} | {task.taskDueDate.ToString("dd/MM/yyyy"), -20} |");
-		}
-		Console.WriteLine();
-	}
-
-	static void deleteTask()
-    {
-		viewAllTasks();
-		Console.WriteLine("Enter the TASK NAME to be deleted");
-		string taskName = Console.ReadLine();
-		foreach (Task task in GlobalStorage.taskList) {
-			if (task.taskName.Equals(taskName)) {
-				GlobalStorage.taskList.Remove(task); 
-                Console.WriteLine("Task deleted successfully");
-                break;
-            }
-			else {
-				Console.WriteLine("Task not found\n");
-			}
-		}
-	}
+	//Console.WriteLine(File.ReadAllText(fileName));
 }
