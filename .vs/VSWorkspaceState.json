@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\firstApp",
+    "\\firstApp\\firstApp"
   ],
-  "SelectedNode": "\\toDoList",
+  "SelectedNode": "\\firstApp\\firstApp\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
