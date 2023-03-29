@@ -1,0 +1,15 @@
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.csproj.AssemblyReference.cache
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.AssemblyInfoInputs.cache
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.AssemblyInfo.cs
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.csproj.CoreCompileInputs.cache
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\bin\Debug\net7.0\udemy_cSharpMasterclass.exe
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\bin\Debug\net7.0\udemy_cSharpMasterclass.deps.json
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\bin\Debug\net7.0\udemy_cSharpMasterclass.runtimeconfig.json
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\bin\Debug\net7.0\udemy_cSharpMasterclass.dll
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\bin\Debug\net7.0\udemy_cSharpMasterclass.pdb
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.dll
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\refint\udemy_cSharpMasterclass.dll
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.pdb
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\udemy_cSharpMasterclass.genruntimeconfig.cache
+C:\Users\matim\source\repos\CSharp-Exercises\udemy_cSharpMasterclass\udemy_cSharpMasterclass\obj\Debug\net7.0\ref\udemy_cSharpMasterclass.dll
