@@ -1,11 +1,33 @@
 ﻿using System;
 using System.Diagnostics.Metrics;
+using System.Net.Http.Headers;
 
 class Program
 {
+    // Chapter 5 - Loops
     static void Main(string[] args) 
     {
+        float scoreCounter = 0;
+        int iterations = 0;
+        int input;
 
+        while (true)
+        {
+            Console.Write("Enter the student score or -1 when you are ready: ");
+            bool success = int.TryParse(Console.ReadLine(), out input);
+            if (success)
+            {
+                if (input == -1)
+                    break;
+                else
+                {
+                    scoreCounter += input;
+                    iterations++;
+                }
+            }
+        }
+        Console.WriteLine($"The average score of your students is: {scoreCounter / iterations}");
+        Console.Read();
     }
     
     // Chapter 4 - If statements
