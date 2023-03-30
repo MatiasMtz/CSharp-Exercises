@@ -3,12 +3,47 @@ using System.Diagnostics.Metrics;
 
 class Program
 {
-    
-    // Chapter 3 - Methods | Functions
-    static void Main(string[] args)
+    static void Main(string[] args) 
     {
-        Console.WriteLine("Hello World");
+
     }
+    
+    // Chapter 4 - If statements
+    static void temperatureCheck(string[] args)
+    {
+        Console.Write("Please, enter the temperature: ");
+        string userInput = Console.ReadLine();
+        string output = "";
+
+        if (int.TryParse(userInput, out int temperature))
+        {
+            output = temperature <= 15 ? "it is too cold here" : temperature >= 16 && temperature <= 28 ? "it is ok" : "it is hot here";
+            Console.WriteLine(output);
+        }
+        else
+            Console.WriteLine("Not a valid Temperature");
+    }
+
+    static void CheckHighscore(string playerName, int score)
+    {
+        // Highscore and highscorePlayer should be a global var.
+        int highscore = 2000;
+        string highscorePlayer = "aleekei";
+
+        if (score > highscore)
+        {
+            highscore = score;
+            highscorePlayer = playerName;
+            Console.WriteLine($"New highscore is {highscore}");
+            Console.WriteLine($"New highscore holder is {playerName}");
+        }
+        else
+        {
+            Console.WriteLine($"The old highscore of {highscore} could not be broken and is still held by {highscorePlayer}");
+        }
+    }
+
+    // Chapter 3 - Methods | Functions
     static void GreetFriend(string friendName1, string friendName2, string friendName3)
     {
         /* Main method:
